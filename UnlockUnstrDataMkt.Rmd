@@ -3,9 +3,9 @@ title: "Unlock Unstructured Data"
 author: "Hui Lin"
 date: '`r Sys.Date()`'
 output:
+  slidy_presentation: default
   ioslides_presentation: default
   beamer_presentation: default
-  slidy_presentation: default
 ---
 
 
@@ -59,7 +59,9 @@ source("Rcode/00Require.R")
 
 ## What is Unstructured Data?
 
-<img src="Images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
+- Angelababy? 
+
+<img src="Images/angelbaby.png" alt="HTML5 Icon" style="width:400px;height:300px;">
 
 ## What is Unstructured Data?
 

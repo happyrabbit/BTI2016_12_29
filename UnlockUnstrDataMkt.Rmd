@@ -59,6 +59,10 @@ source("Rcode/00Require.R")
 
 ## What is Unstructured Data?
 
+<img src="Images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
+
+## What is Unstructured Data?
+
 <img src="Images/unstructured-data.png" height="400px" />
 
 ## Why?---It is everywhere
@@ -102,14 +106,14 @@ pdat%>%
 ## Static Web: Wikipedia
 
 ```{r}
-read.csv("Rcode/StatisticianR.csv")%>%
+read.csv("/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/StatisticianR.csv")%>%
   datatable()
 ```
 
 ## Static Web: buzzfeed.com
 
 ```{r}
-urlbuzz="Rcode/BuzzFeed.html"
+urlbuzz="/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/BuzzFeed.html"
 url_parsed <- read_html(urlbuzz)
 titles<-html_nodes(url_parsed, css = ".lede__link") %>%
   html_text()%>%
@@ -161,7 +165,7 @@ x[idx]
 ## NLP: How does computer understand language?
   
 ```{r}
-load("Rcode/Result_files/crazylanguage.RData")
+load("/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/crazylanguage.RData")
 
 names(annotres$token)[3]<-"word"
 # plot(annotres,2)
@@ -359,7 +363,7 @@ nodes%>%
 library(coreNLP)
 initCoreNLP()
 ###############
-load("Rcode/Result_files/Yieldhero.RData")
+load("/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/Yieldhero.RData")
 #sentLen<-table(getToken(anno)$sentence)
 #hist(sentLen,breaks=30) 
 token<-getToken(anno)
@@ -492,21 +496,14 @@ runApp('Rcode/Shiny_NLP')
 - Syntax in robots.txt
 - Scraping etiquette
 
-
+## Team up!
 
 ##  Data and Code
 
-- All data are available in the package I am developing:
-
-```r
-library(devtools)
-install_github("happyrabbit/DataScienceR")
-library(DataScienceR)
-```
-
 - Slides and R code can be found here: 
-
-- http://scientistcafe.com/
+    - https://github.com/happyrabbit/BTI2016_12_29
+- Future related talk:
+    - http://scientistcafe.com
 
 
 

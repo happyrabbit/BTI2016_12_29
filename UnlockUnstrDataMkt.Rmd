@@ -8,7 +8,6 @@ output:
   beamer_presentation: default
 ---
 
-
 <style>
 .footer {
     color: black;
@@ -29,19 +28,6 @@ output:
 }
 </style>
 
-
-<!--
-## Face it, this is our world......
-
-![](C:/Users/linhu/Desktop/Presentations/image/SocialMediaWorld.png)
-
-
-## Objective
-
-![](L:/MARKET ANALYSIS/NLP/Presentations/paozhuanyinyu.png)
-
--->
-
 ## Outline
 
 ```{r setup, include=FALSE}
@@ -54,14 +40,16 @@ source("Rcode/00Require.R")
 - Where?
 - Automatic data pipeline
 - Data analysis
-- Visualization and Report 
+- Visualization and report 
 - Cross functional collaboration
+- Slides and R code can be found here: 
+    - https://github.com/happyrabbit/BTI2016_12_29
 
 ## What is Unstructured Data?
 
 - Angelababy? 
 
-<img src="Images/angelbaby.png" alt="HTML5 Icon" style="width:400px;height:300px;">
+<img src="Images/angelbaby.png" alt="HTML5 Icon" style="width:400px;height:400px;">
 
 ## What is Unstructured Data?
 
@@ -331,7 +319,6 @@ plot(net, layout=l)
 legend(x= -1.5, y=-1,c("Manitoba","Minnesota","Nebraska","Others"),
        pt.bg = colrs,pch=21, pt.cex = 1, cex = .8)
 ```
-
 
 ## Network
 

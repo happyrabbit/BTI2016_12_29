@@ -6,4 +6,3 @@ browseURL("/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/MichaelWeir
 urlbuzz="/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/BuzzFeed.html"
 browseURL(urlbuzz)
 browseURL("/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/connections.html")
-

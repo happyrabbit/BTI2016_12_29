@@ -61,7 +61,7 @@ source("Rcode/00Require.R")
 - Search engine data
 - Social media data
 
-## Why?---Practicalf arguments
+## Why?---Practical arguments
 
 - Social media is impactful! [Amusing Ourselves to Death: Public Discourse in the Age of Show Business (1985)]
 - Financial resources are sparse
@@ -96,14 +96,14 @@ pdat%>%
 ## Static Web: Wikipedia
 
 ```{r}
-read.csv("/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/StatisticianR.csv")%>%
+read.csv("RawData/StatisticianR.csv")%>%
   datatable()
 ```
 
 ## Static Web: buzzfeed.com
 
 ```{r}
-urlbuzz="/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/BuzzFeed.html"
+urlbuzz="RawData/BuzzFeed.html"
 url_parsed <- read_html(urlbuzz)
 titles<-html_nodes(url_parsed, css = ".lede__link") %>%
   html_text()%>%
@@ -155,7 +155,7 @@ x[idx]
 ## NLP: How does computer understand language?
   
 ```{r}
-load("/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/crazylanguage.RData")
+load("RawData/crazylanguage.RData")
 
 names(annotres$token)[3]<-"word"
 # plot(annotres,2)
@@ -352,7 +352,7 @@ nodes%>%
 library(coreNLP)
 initCoreNLP()
 ###############
-load("/Users/happyrabbit/Documents/GitHub/BTI2016_12_29/RawData/Yieldhero.RData")
+load("RawData/Yieldhero.RData")
 #sentLen<-table(getToken(anno)$sentence)
 #hist(sentLen,breaks=30) 
 token<-getToken(anno)

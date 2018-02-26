@@ -156,7 +156,6 @@ x[idx]
   
 ```{r}
 load("RawData/crazylanguage.RData")
-
 names(annotres$token)[3]<-"word"
 # plot(annotres,2)
 plot(annotres,9)
